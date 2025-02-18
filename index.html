@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>To-Do-List Project</title>
+</head>
+<body>
+    <div class="container">
+        <div class="screen" id="calendar-screen">
+            <header>
+                <h1><span id="current-date"></span></h1>
+                <button id="toggle-mode">🌙 Night Mode</button>
+            </header>
+            <div class="calendar">
+                
+                <h3>Today</h3>
+                <ul id="today-tasks">
+                    
+                    
+                </ul>
+                <h3>Tomorrow</h3>
+                <ul id="tomorrow-tasks">
+                    
+                </ul>
+            </div>
+            <button id="add-task-btn">+</button>
+        </div>
+
+        <div class="screen" id="task-creation-screen" style="display: none;">
+            <header>
+                <h1>Create Task</h1>
+            </header>
+            <input type="text" id="task-name" placeholder="Task Name">
+            <input type="date" id="task-date">
+            <input type="time" id="task-time">
+            <select id="task-category">
+                <option value="Study">Study</option>
+                <option value="Productive">Productive</option>
+                <option value="Life">Life</option>
+            </select>
+            <button id="create-task-btn">Create Task</button>
+            <button id="back-to-calendar">Back</button>
+        </div>
+
+        <div class="screen" id="analytics-screen" style="display: none;">
+            <header>
+                <h1>Data Report</h1>
+            </header>
+            <p>Total Activities: 10</p>
+            <p>Completion Rate: 75%</p>
+            <p>Missed Tasks: 25%</p>
+            <div class="graph">
+                <p>Results Activity (Last 7 Days)</p>
+                <!-- Placeholder for graph -->
+            </div>
+            <button id="back-to-calendar-analytics">Back</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <div class="screen" id="task-creation-screen" style="display: none;">
+        <header>
+            <h1>Create Task</h1>
+        </header>
+        <input type="text" id="task-name" placeholder="Task Name">
+        <input type="date" id="task-date">
+        <input type="time" id="task-time">
+        <select id="task-category">
+            <option value="Study">Study</option>
+            <option value="Productive">Productive</option>
+            <option value="Life">Life</option>
+        </select>
+        <button id="create-task-btn">Create Task</button>
+        <button id="back-to-calendar">Back</button>
+    </div>
+    
+    
+<footer>
+    <p id="contact-info" data-en="Contact me at: haya.ehab.dev@gmail.com" data-ar="تواصل معي على: haya.ehab.dev@gmail.com">
+        Contact me at: haya.ehab.dev@gmail.com
+    </p>
+    <div class="social-links">
+        <a href="https://github.com/haya-ehab" target="_blank" class="social-button">GitHub</a>
+        <a href="http://linkedin.com/in/haya-ehab-72206a351" target="_blank" class="social-button">LinkedIn</a>
+        <a href="https://mail.google.com/mail/u/4/#inbox" class="social-button">Email</a>
+      
+    </div>
+    
+    
+</footer>
+</body>
+</html>

@@ -1,0 +1,140 @@
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+background-color: #E8ECD7;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+.container {
+    width: 90%;
+    max-width: 500px;
+    background-color: #BAD8B6;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+
+    input {
+        flex: 1;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-right: 10px;
+        background-color: var(--input-bg);
+        color: var(--text-color);
+    }
+
+    :root {
+        --background-color: #ffffff;
+        --text-color: #333333;
+        --button-bg: #ff6f61; /* Soft pink */
+        --button-hover-bg: #ff4f3d;
+        --input-bg: #f0f0f0;
+        --card-bg: #BAD8B6; /* Light card background */
+    }
+    body.morning {
+        background-color: #E1EACD; /* Light yellow background */
+        color: #333333; /* Dark text */}
+
+        container.morning {
+            background-color: #BAD8B6; /* Soft yellow card background */
+        }
+        
+    
+    body.dark {
+        --background-color: #1a1a1a;
+        --text-color: #ffffff;
+        --button-bg: #ff4f3d;
+        --button-hover-bg: #ff6f61;
+        --input-bg: #333333;
+        --card-bg: #2a2a2a; /* Dark card background */
+    }
+    
+    
+    
+    
+    #today-tasks li.completed {
+        text-decoration: line-through;
+        color: gray;
+    }
+
+   
+
+
+
+
+body.night {
+    background-color: #1A1A1A; /* Dark background */
+    color: #FFFFFF; /* Light text */
+
+}
+
+.container.night {
+    background-color: #2A2A2A; /* Dark card background */
+    
+}
+
+body.dark {
+    --background-color: #1a1a1a;
+    --text-color: #ffffff;
+    --button-bg: #ff4f3d;
+    --button-hover-bg: #ff6f61;
+    --input-bg: #333333;
+    --card-bg: #2a2a2a; /* Dark card background */
+}
+
+
+footer{
+
+    position: absolute;
+    bottom: 30px;
+    padding: 20px;
+    font-style: white;
+}
+
+
+
+button {
+    background-color: #E1EACD;
+    color: black;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s; 
+}
+.social-links {
+    margin-top: 10px; /* Space between contact info and social links */
+}
+.social-button {
+    margin: 0 10px; /* Space between buttons */
+    text-decoration: none; /* Remove underline */
+    color: black; /* Text color */
+    background-color: white; /* Background color */
+    padding: 10px 15px; /* Padding for buttons */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+.social-button:hover {
+    background-color: var(--button-hover-bg); /* Change background on hover */}
+    #contact-info {
+        white-space: nowrap; /* Prevent text from wrapping */
+    }
